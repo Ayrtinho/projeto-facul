@@ -1,0 +1,172 @@
+<ion-header>
+  <ion-toolbar class="custom-toolbar">
+    <ion-title class="custom-title">Ion Ingressos</ion-title>
+    <ion-buttons slot="end">
+      <!-- Icone de Ticket -->
+      <ion-button class="icon-only-button" (click)="showEventos()" >
+        <ion-icon name="ticket-outline"></ion-icon>
+      </ion-button>
+      <!-- Botão de login -->
+      <ion-button class="icon-only-button" (click)="showLogin()"> 
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+     <!-- Conteúdo da página -->
+<ion-content>
+  <div class="image-container">
+    <a href="/compra" class="image-link">
+      <div class="image-overlay">
+        <div class="film-info">
+          <div class="badge">
+            <span class="number">?</span>
+            <span class="genre-text">Drama,Suspense</span>
+          </div>
+          <div class="text-content">
+            <div class="title">Coringa: Delírio A Dois</div>
+          </div>
+        </div>
+      </div>
+      <img src="assets/pj4.jpg" alt="Descrição da imagem">
+    </a>
+  </div>
+
+<!-- Seção de Futebol -->
+ <div class="trending-futebol">
+  <h3>Futebol</h3>
+  <div class="trending-futebol-container">
+    <button class="fut left-fut">&#9664;</button>
+    <div class="futebol-list">
+       <!-- titulo fora do card -->
+        <div class="futebol-card-container">
+          <div class="futebol-card">
+            <a href="">
+              <img src="assets/FUT.png" alt="">
+            </a>
+          </div>
+            <div class="futebol-title">Faustino x Raposas</div>
+        </div>
+
+        <div class="futebol-card-container">
+          <div class="futebol-card">
+            <a href="">
+              <img src="assets/futebol.png" alt="">
+            </a>
+          </div>
+            <div class="futebol-title">Pavilhão x Borcelle</div>
+        </div>
+
+        <div class="futebol-card-container">
+          <div class="futebol-card">
+            <a href="">
+              <img src="" alt="">
+            </a>
+          </div>
+            <div class="futebol-title">Jogo 1</div>
+        </div>
+
+        <div class="futebol-card-container">
+          <div class="futebol-card">
+            <a href="">
+              <img src="" alt="">
+            </a>
+          </div>
+            <div class="futebol-title">Jogo 1</div>
+        </div>
+
+        <div class="futebol-card-container">
+          <div class="futebol-card">
+            <a href="">
+              <img src="" alt="">
+            </a>
+          </div>
+            <div class="futebol-title">Jogo 1</div>
+        </div>
+        </div>
+        <button class="fut right-fut">&#9654;</button>
+    </div>
+  </div>
+ 
+  <hr class="linha">
+
+  <!-- Seção de Filmes em Alta -->
+<div class="trending-filmes">
+  <h3>Filmes Em Alta</h3>
+  <div class="trending-filmes-container">
+    <button class="filmes left-filmes">&#9664;</button>
+    <div class="filmes-list">
+       <!-- titulo fora do card -->
+        <div class="filmes-card-container">
+          <div class="filmes-card">
+            <a href="">
+              <img src="assets/pj1.jpg" alt="">
+            </a>
+          </div>
+            <div class="filmes-title">Velozes e Furiosos</div>
+        </div>
+
+        <div class="filmes-card-container">
+          <div class="filmes-card">
+            <a href="">
+              <img src="assets/pj3.jpg" alt="">
+            </a>
+          </div>
+            <div class="filmes-title">Deadpool & Wolwerine</div>
+        </div>
+
+         <div class="filmes-card-container">
+          <div class="filmes-card">
+            <a href="">
+              <img src="assets/long.png" alt="">
+            </a>
+          </div>
+            <div class="filmes-title">LongLegs</div>
+        </div>
+
+        <div class="filmes-card-container">
+          <div class="filmes-card">
+            <a href="">
+              <img src="assets/fsd.png" alt="">
+            </a>
+          </div>
+            <div class="filmes-title">Os Fantasmas Ainda Se Divertem</div>
+        </div>
+        </div>
+        <button class="filmes right-filmes">&#9654;</button>
+    </div>
+  </div>
+       
+
+  <!-- Seção de Noticias -->
+ <div class="trending-noticias">
+  <h3>Notícias</h3>
+  
+</div>
+
+</ion-content>
+
+<!-- Subnavbar fixa ao final da página -->
+<ion-footer>
+  <ion-toolbar class="custom-footer-toolbar">
+    <ion-segment class="custom-segment">
+      <ion-segment-button value="filmes" class="custom-segment-button" (click)="showFilmes()">
+        <ion-icon name="film-outline" class="custom-icon"></ion-icon>
+        <ion-label class="custom-label">Filmes</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="futebol" class="custom-segment-button">
+        <ion-icon name="football-outline" class="custom-icon"></ion-icon>
+        <ion-label class="custom-label">Futebol</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="noticias" class="custom-segment-button">
+        <ion-icon name="newspaper-outline" class="custom-icon"></ion-icon>
+        <ion-label class="custom-label">Notícias</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-footer>
+
+
