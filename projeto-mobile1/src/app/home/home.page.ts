@@ -10,7 +10,7 @@ import { NavController } from '@ionic/angular';
 })
 export class HomePage {
 
-  constructor(private router: Router, private navCtrl: NavController, ) {}
+  constructor(private router:  Router ,private navCtrl: NavController, ) {}
 
   showLogin() {
     this.navCtrl.navigateForward('login')
