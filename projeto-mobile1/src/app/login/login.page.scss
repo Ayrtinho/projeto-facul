@@ -3,7 +3,7 @@ ion-content {
 }
 
 .login-section{
-    height: 74vh;
+    height: 80vh;
     width: 100%;
     max-width: 500px;
     background: #fff;
@@ -68,10 +68,10 @@ ion-content {
             color: #7b7b7b;
         }
         .signup-button{
-            --border-color: #b4b4b4;
-            --color: #000;
+            --background: #f9b801;
             font-weight: bold;
             width: 100%;
         }
     }
     }
+
