@@ -1,0 +1,59 @@
+.custom-toolbar {
+    --background: #1a237e; /* Cor de fundo personalizada */
+    --color: #ffffff; /* Cor do texto personalizada */
+    --padding-start: 10px; /* Espaçamento à esquerda */
+    --padding-end: 10px; /* Espaçamento à direita */
+}
+  
+.custom-title {
+    font-family: 'Roboto', sans-serif; /* Fonte personalizada */
+    font-size: 22px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito no título */
+}
+  
+.icon-only-button {
+    --color: #ffffff; /* Cor do ícone */
+    --padding: 0; /* Remove o padding */
+    --border: none; /* Remove a borda */
+    --margin: 0; /* Remove a margem */
+  }
+  
+.icon-only-button ion-icon {
+    font-size: 24px; /* Ajuste o tamanho do ícone conforme necessário */
+}
+
+
+.custom-footer-toolbar {
+    --background: #f0f0f0; /* Cor de fundo da toolbar */
+    --color: #1a237e; /* Cor dos ícones e texto */
+    --padding-start: 0; /* Remove padding desnecessário */
+    --padding-end: 0; /* Remove padding desnecessário */
+    --height: 50px; /* Diminuir a altura do footer */
+  }
+  
+  .custom-segment {
+    --background: #f0f0f0; /* Cor de fundo do segmento */
+    --color: #1a237e; /* Cor dos ícones e texto do segmento */
+    --indicator-color: #1a237e; /* Cor do indicador ativo */
+  }
+  
+  .custom-segment-button {
+    --background: transparent; /* Fundo transparente para os botões */
+    --color: #1a237e; /* Cor do texto dos botões */
+    --padding: 0; /* Remove padding interno dos botões */
+    --border: none; /* Remove borda dos botões */
+    display: flex;
+    flex-direction: column; /* Organiza ícones e labels em coluna */
+    align-items: center; /* Alinha ícones e labels ao centro horizontalmente */
+    justify-content: center; /* Alinha ícones e labels ao centro verticalmente */
+  }
+  
+  .custom-icon {
+    font-size: 20px; /* Tamanho do ícone diminuído */
+  }
+  
+  .custom-label {
+    font-family: 'Roboto', sans-serif; /* Fonte personalizada para o texto */
+    font-size: 10px; /* Tamanho da fonte diminuído para o texto */
+    margin-top: 2px; /* Espaçamento reduzido entre ícone e texto */
+  }

@@ -159,10 +159,19 @@
 
 <!--sessao tipos de pagamentos-->
 <div class="card-credit-session">
-  <h4>Formas de Pagamentos</h4>
-  <div class="icon">
-    <img src="assets/nubank.png">
-  </div>
+  <h3>Formas de Pagamentos</h3>
+</div>
+
+<div class="cartao">
+  <h4>Crédito</h4>
+</div>
+
+<div class="cartao-debito">
+  <h4>Débito</h4>
+</div>
+
+<div class="outros">
+  <h3>Outros Pagamentos</h3>
 </div>
 
 </ion-content>
@@ -176,7 +185,7 @@
         <ion-label class="custom-label">Filmes</ion-label>
       </ion-segment-button>
 
-      <ion-segment-button value="futebol" class="custom-segment-button">
+      <ion-segment-button value="futebol" class="custom-segment-button" (click)="showFutebol()">
         <ion-icon name="football-outline" class="custom-icon"></ion-icon>
         <ion-label class="custom-label">Futebol</ion-label>
       </ion-segment-button>

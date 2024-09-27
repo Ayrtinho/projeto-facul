@@ -24,5 +24,9 @@ export class HomePage {
     this.navCtrl.navigateForward('filmes')
   }
 
+  showFutebol() {
+    this.navCtrl.navigateForward('futebol')
+  }
+
 
 }
