@@ -1,13 +1,38 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>futebol</ion-title>
+<ion-header>
+  <ion-toolbar class="custom-toolbar">
+    <ion-title class="custom-title">Ion Ingressos</ion-title>
+    <ion-buttons slot="end">
+      <!-- Icone de Ticket -->
+      <ion-button class="icon-only-button" (click)="showEventos()" >
+        <ion-icon name="ticket-outline"></ion-icon>
+      </ion-button>
+      <!-- Botão de login -->
+      <ion-button class="icon-only-button" (click)="showLogin()"> 
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">futebol</ion-title>
-    </ion-toolbar>
-  </ion-header>
-</ion-content>
+
+<!-- Subnavbar fixa ao final da página -->
+<ion-footer>
+  <ion-toolbar class="custom-footer-toolbar">
+    <ion-segment class="custom-segment">
+      <ion-segment-button value="filmes" class="custom-segment-button" (click)="showHome()">
+        <ion-icon name="home-outline" class="custom-icon"></ion-icon>
+        <ion-label class="custom-label">Home</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="futebol" class="custom-segment-button" (click)="showFilmes()">
+        <ion-icon name="football-outline" class="custom-icon"></ion-icon>
+        <ion-label class="custom-label">Filmes</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="noticias" class="custom-segment-button">
+        <ion-icon name="newspaper-outline" class="custom-icon"></ion-icon>
+        <ion-label class="custom-label">Notícias</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-footer>

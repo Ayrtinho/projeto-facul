@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-futebol',
@@ -7,7 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FutebolPage implements OnInit {
 
-  constructor() { }
+  constructor(private navCtrl: NavController) {}
+
+  showLogin() {
+    this.navCtrl.navigateForward('login')
+  }
+
+  showEventos() {
+    this.navCtrl.navigateForward('meus')
+  }
+
+  showHome() {
+    this.navCtrl.navigateForward('home')
+  }
+  
+  showFilmes(){
+    this.navCtrl.navigateForward('filmes')
+  }
+
 
   ngOnInit() {
   }
