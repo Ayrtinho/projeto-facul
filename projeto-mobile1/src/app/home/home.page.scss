@@ -344,6 +344,66 @@
   background-color: #000;
 }
 
-/* seçao para as noticias  */
+/* noticias  */
 
+/* pagamentos */
 
+.card-credit-session {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.card-credit-session h1 {
+  font-size: 1.4rem; /* Reduzindo ainda mais o título */
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: bold;
+  padding: 15px;
+}
+
+/* Seções de pagamento */
+.cartao-credito, .cartao-debito, .outros {
+  margin: 10px auto;
+  max-width: 900px;
+  padding: 0;
+}
+
+.cartao-credito h3, .cartao-debito h3, .outros h3 {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+/* Estilo dos ícones */
+.pagamentos {
+  display: flex;
+  justify-content: center; /* Alinhamento central */
+  flex-wrap: wrap;
+  gap: 8px; /* Espaço pequeno entre os cartões */
+}
+
+.pagamentos img {
+  width: 70px; /* Cartões menores para telas móveis */
+  height: 43px; /* Mantendo a proporção */
+  object-fit: contain;
+  border-radius: 5px; /* Bordas suavemente arredondadas */
+  padding: 3px;
+  transition: transform 0.2s;
+}
+
+.pagamentos img:hover {
+  transform: scale(1.05); /* Pequeno efeito de zoom */
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+  .pagamentos img {
+    width: 60px; /* Cartões ainda menores em telas pequenas */
+    height: 37px; /* Mantendo a proporção para pequenos dispositivos */
+  }
+
+  .cartao-credito h3, .cartao-debito h3, .outros h3 {
+    font-size: 1.1rem; /* Títulos menores */
+  }
+}
