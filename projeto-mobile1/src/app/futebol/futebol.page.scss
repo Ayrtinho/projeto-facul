@@ -122,3 +122,55 @@
     font-size: 1.1rem; /* Títulos menores */
   }
 }
+
+/* cards */
+ 
+.titulo-fut{
+  padding: 20px;
+}
+
+.titulo-fut h1{
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.movie-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px; /* Espaçamento entre os cards */
+  padding: 15px;
+}
+
+.movie-card {
+  width: 45%; /* Para que os cards fiquem ainda menores */
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  text-align: center; /* Centralizar o título */
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.poster-container {
+  width: 100%;
+  height: 200px; /* Diminuímos o tamanho da imagem */
+}
+
+.movie-poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.movie-title {
+  font-size: 14px; /* Título menor */
+  margin-top: 8px;
+}
+
