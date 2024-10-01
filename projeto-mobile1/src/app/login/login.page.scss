@@ -58,8 +58,8 @@ ion-content {
     .action-button{
         text-align: center;
         .login-button{
-            --background: #f9b801;
-            width: 100%;
+            --background: #1a237e;
+            width: 50%;
             font-weight: bold;
         }
         p{
@@ -68,9 +68,9 @@ ion-content {
             color: #7b7b7b;
         }
         .signup-button{
-            --background: #f9b801;
+            --background: #1a237e;
             font-weight: bold;
-            width: 100%;
+            width: 50%;
         }
     }
     }
