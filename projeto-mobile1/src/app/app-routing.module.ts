@@ -30,6 +30,10 @@ const routes: Routes = [
     path: 'futebol',
     loadChildren: () => import('./futebol/futebol.module').then( m => m.FutebolPageModule)
   },
+  {
+    path: 'compra',
+    loadChildren: () => import('./compra/compra.module').then( m => m.CompraPageModule)
+  },
 
 ];
 

@@ -26,6 +26,10 @@ export class FutebolPage implements OnInit {
     this.navCtrl.navigateForward('filmes')
   }
 
+  showCompra() {
+    this.navCtrl.navigateForward('compra')
+  }
+
 
   ngOnInit() {
   }

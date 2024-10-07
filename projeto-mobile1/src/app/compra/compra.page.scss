@@ -1,0 +1,40 @@
+.seat-map {  
+    display: flex;  
+    flex-direction: column;  
+    gap: 10px;  
+    margin-top: 10px;  
+}  
+
+.row {  
+    display: flex;  
+    justify-content: center;  
+    gap: 10px;  
+}  
+
+.seat {  
+    background-color: #4CAF50;  
+    color: white;  
+    border: none;  
+    padding: 10px 15px;  
+    border-radius: 5px;  
+    cursor: pointer;  
+    font-weight: bold;  
+}  
+
+.seat:hover {  
+    background-color: #45a049;  
+}  
+
+.seat.selected {  
+    background-color: #FF5722;  
+}  
+
+ion-card {  
+    margin: 10px;  
+}  
+
+
+ion-label h2 {  
+    font-size: 1.1em;  
+    font-weight: bold;  
+}  

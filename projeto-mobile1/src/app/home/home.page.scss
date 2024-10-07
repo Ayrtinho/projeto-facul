@@ -340,11 +340,24 @@
   opacity: 1; /* Mostra as setas ao passar o mouse sobre a área */
 }
 
-.linha{
-  background-color: #000;
-}
 
 /* noticias  */
+
+.trending-noticias{
+  background-color: #f0f0f0;
+  padding: 20px;
+  position: relative; /* Necessário para posicionar as setas */
+  overflow: hidden
+}
+
+.trending-noticias h3{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: left;
+}
+
 
 /* pagamentos */
 
