@@ -1,88 +1,87 @@
-<ion-app>  
-  <ion-header>  
+<ion-header>  
       <ion-toolbar>  
           <ion-title>Compra de Ingressos</ion-title>  
       </ion-toolbar>  
-  </ion-header>  
+</ion-header>  
 
-  <ion-content>  
-      <ion-card>  
-          <img src="assets/champ.png"> 
-      </ion-card>  
+<ion-content>  
+    <ion-card>  
+        <img src="assets/champ.png"> 
+    </ion-card>  
 
-      <ion-list>  
-          <ion-item>  
-              <ion-label>  
-                  <h2>Arquibancada Lateral</h2>  
-                  <p>Preço: R$ 100,00</p>  
-                  <p>Descrição: Ingressos em setores laterais com boa visibilidade.</p>  
-              </ion-label>  
-              <ion-radio slot="start" value="100" id="arquibancada"></ion-radio>  
-          </ion-item>  
+    <ion-list>  
+        <ion-item>  
+            <ion-label>
+                 <h2>Arquibancada Lateral</h2>  
+                 <p>Preço: R$ 100,00</p>  
+                 <p>Descrição: Ingressos em setores laterais com boa visibilidade.</p>  
+            </ion-label>  
+            <ion-radio slot="start" value="100" id="arquibancada"></ion-radio>  
+        </ion-item>  
 
-          <ion-item>  
-              <ion-label>  
-                  <h2>Cadeiras Premium</h2>  
-                  <p>Preço: R$ 200,00</p>  
-                  <p>Descrição: Ingressos com acesso a cadeiras confortáveis e área VIP.</p>  
-              </ion-label>  
-              <ion-radio slot="start" value="200" id="cadeiras-premium"></ion-radio>  
-          </ion-item>  
+        <ion-item>  
+            <ion-label>  
+                <h2>Cadeiras Premium</h2>  
+                <p>Preço: R$ 200,00</p>  
+                <p>Descrição: Ingressos com acesso a cadeiras confortáveis e área VIP.</p>  
+            </ion-label>  
+            <ion-radio slot="start" value="200" id="cadeiras-premium"></ion-radio>  
+        </ion-item>  
 
-          <ion-item>  
-              <ion-label>  
-                  <h2>Camarote</h2>  
-                  <p>Preço: R$ 500,00</p>  
-                  <p>Descrição: Acesso a áreas exclusivas com serviço de buffet e bebida.</p>  
-              </ion-label>  
-              <ion-radio slot="start" value="500" id="camarote"></ion-radio>  
-          </ion-item>  
-      </ion-list>  
+        <ion-item>  
+            <ion-label>  
+                <h2>Camarote</h2>  
+                <p>Preço: R$ 500,00</p>  
+                <p>Descrição: Acesso a áreas exclusivas com serviço de buffet e bebida.</p>  
+            </ion-label>  
+            <ion-radio slot="start" value="500" id="camarote"></ion-radio>  
+        </ion-item>  
+    </ion-list>  
 
-      <ion-item>  
-          <ion-label>Tipo de Ingresso:</ion-label>  
-          <ion-select id="ticket-type">  
-              <ion-select-option value="inteira">Inteira</ion-select-option>  
-              <ion-select-option value="meia">Meia</ion-select-option>  
-              <ion-select-option value="gratuidade">Gratuidade</ion-select-option>  
-          </ion-select>  
-      </ion-item>  
+    <ion-item>  
+        <ion-label>Tipo de Ingresso:</ion-label>  
+        <ion-select id="ticket-type">  
+            <ion-select-option value="inteira">Inteira</ion-select-option>  
+            <ion-select-option value="meia">Meia</ion-select-option>  
+            <ion-select-option value="gratuidade">Gratuidade</ion-select-option>  
+        </ion-select>  
+    </ion-item>  
 
-      <ion-item>  
-          <ion-label>Quantidade:</ion-label>  
-          <ion-input type="number" id="quantity" value="1" min="1"></ion-input>  
-      </ion-item>  
+    <ion-item>  
+        <ion-label>Quantidade:</ion-label>  
+        <ion-input type="number" id="quantity" value="1" min="1"></ion-input>  
+    </ion-item>  
 
-      <ion-card>  
-          <ion-card-header>  
-              <ion-card-title>Escolha seu Assento</ion-card-title>  
-          </ion-card-header>  
-          <ion-card-content>  
-              <div class="seat-map">  
-                  <div class="row">  
-                      <button class="seat" data-seat="A1" data-price="100">A1</button>  
-                      <button class="seat" data-seat="A2" data-price="100">A2</button>  
-                      <button class="seat" data-seat="A3" data-price="100">A3</button>  
-                  </div>  
-                  <div class="row">  
-                      <button class="seat" data-seat="B1" data-price="200">B1</button>  
-                      <button class="seat" data-seat="B2" data-price="200">B2</button>  
-                      <button class="seat" data-seat="B3" data-price="200">B3</button>  
-                  </div>  
-              </div>  
-          </ion-card-content>  
-      </ion-card>  
+    <ion-card>  
+        <ion-card-header>  
+            <ion-card-title>Escolha seu Assento</ion-card-title>  
+        </ion-card-header>  
+        <ion-card-content>  
+            <div class="seat-map">  
+                <div class="row">  
+                    <button class="seat" data-seat="A1" data-price="100">A1</button>  
+                    <button class="seat" data-seat="A2" data-price="100">A2</button>  
+                    <button class="seat" data-seat="A3" data-price="100">A3</button>  
+                </div>  
+                <div class="row">  
+                    <button class="seat" data-seat="B1" data-price="200">B1</button>  
+                    <button class="seat" data-seat="B2" data-price="200">B2</button>  
+                    <button class="seat" data-seat="B3" data-price="200">B3</button>  
+                </div>  
+            </div>  
+        </ion-card-content>  
+    </ion-card>  
 
-      <ion-card>  
-          <ion-card-header>  
-              <ion-card-title>Resumo da Compra</ion-card-title>  
-          </ion-card-header>  
-          <ion-card-content>  
-              <p id="total-price">Preço Total: R$ 0,00</p>  
-          </ion-card-content>  
-      </ion-card>  
+    <ion-card>  
+        <ion-card-header>  
+            <ion-card-title>Resumo da Compra</ion-card-title>  
+        </ion-card-header>  
+        <ion-card-content>  
+            <p id="total-price">Preço Total: R$ 0,00</p>  
+        </ion-card-content>  
+    </ion-card>  
 
-      <ion-button expand="full" color="primary" id="finalize-button">Finalizar Compra</ion-button>  
-  </ion-content>  
-</ion-app>  
+    <ion-button expand="full" color="primary" id="finalize-button">Finalizar Compra</ion-button>  
+</ion-content>  
+  
 
