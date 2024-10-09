@@ -10,8 +10,8 @@ export class LoginPage implements OnInit {
 
   constructor(private navCtrl: NavController) {}
 
-  showsignUp() {
-    this.navCtrl.navigateForward('signup')
+  showCadastro() {
+    this.navCtrl.navigateForward('cadastro')
   }
 
   ngOnInit() {

@@ -1,12 +1,12 @@
-ion-toolbar{
+ion-toolbar {
     --background: #1a237e;
 }
 
-ion-header{
+ion-header {
     background-color: #1a237e;
 }
 
-ion-title{
+ion-title {
     font-size: 24px;
     font-weight: bold;
     color: white;
@@ -41,7 +41,6 @@ ion-title{
     background-color: #FF9800; /* Laranja */
 }
 
-
 .seat.selected {
     background-color: #FF5722; /* Vermelho */
     transform: scale(1.1);
@@ -63,7 +62,8 @@ ion-title{
     border: 2px solid #ddd; /* Borda ao redor do mapa de assentos */
     padding: 20px; /* Espaçamento interno */
     border-radius: 10px; /* Bordas arredondadas */
-    background-color: transparent; /* Removido o fundo */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo levemente transparente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
 }
 
 ion-card {
@@ -71,5 +71,33 @@ ion-card {
     padding: 10px;
     border-radius: 8px; /* Bordas arredondadas nos cartões */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve nos cartões */
-    background-color: transparent; /* Removido o fundo */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo levemente transparente */
 }
+
+/* Estilo para imagens de assentos */
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; /* Garante que a imagem se ajuste corretamente */
+    border-radius: 8px; /* Bordas arredondadas nas imagens */
+}
+
+/* Estilizando o layout geral */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Fonte mais moderna */
+    background-color: #f5f5f5; /* Fundo claro para contraste */
+}
+
+/* Configurações de layout para responsividade */
+@media (max-width: 768px) {
+    .seat-map {
+        margin: 10px; /* Reduzir margens em telas menores */
+        padding: 15px; /* Reduzir padding em telas menores */
+    }
+
+    ion-title {
+        font-size: 20px; /* Reduzir o tamanho da fonte em telas menores */
+    }
+}
+

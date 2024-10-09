@@ -23,10 +23,6 @@ const routes: Routes = [
     loadChildren: () => import('./filmes/filmes.module').then( m => m.FilmesPageModule)
   },
   {
-    path: 'signup',
-    loadChildren: () => import('./signup/signup.module').then( m => m.SignupPageModule)
-  },
-  {
     path: 'futebol',
     loadChildren: () => import('./futebol/futebol.module').then( m => m.FutebolPageModule)
   },
@@ -37,6 +33,10 @@ const routes: Routes = [
   {
     path: 'buy',
     loadChildren: () => import('./buy/buy.module').then( m => m.BuyPageModule)
+  },
+  {
+    path: 'cadastro',
+    loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
   },
   
 
