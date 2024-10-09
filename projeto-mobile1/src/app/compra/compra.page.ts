@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CompraPage implements OnInit {
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
   }

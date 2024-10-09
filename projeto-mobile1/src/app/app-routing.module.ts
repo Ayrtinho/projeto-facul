@@ -34,6 +34,11 @@ const routes: Routes = [
     path: 'compra',
     loadChildren: () => import('./compra/compra.module').then( m => m.CompraPageModule)
   },
+  {
+    path: 'buy',
+    loadChildren: () => import('./buy/buy.module').then( m => m.BuyPageModule)
+  },
+  
 
 ];
 

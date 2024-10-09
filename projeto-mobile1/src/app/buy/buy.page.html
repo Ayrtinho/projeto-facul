@@ -1,0 +1,88 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Comprar Ingressos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-label>Escolha a Sessão:</ion-label>
+      <ion-select [(ngModel)]="selectedSession" name="session">
+        <ion-select-option value="10:00">10:00</ion-select-option>
+        <ion-select-option value="14:00">14:00</ion-select-option>
+        <ion-select-option value="18:00">18:00</ion-select-option>
+        <ion-select-option value="21:00">21:00</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Escolha o Estado:</ion-label>
+      <ion-select [(ngModel)]="selectedState" name="state">
+        <ion-select-option value="SP">São Paulo</ion-select-option>
+        <ion-select-option value="RJ">Rio de Janeiro</ion-select-option>
+        <ion-select-option value="MG">Minas Gerais</ion-select-option>
+        <ion-select-option value="RS">Rio Grande do Sul</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Tipo de Assento:</ion-label>
+      <ion-select [(ngModel)]="selectedSeatType" name="seatType">
+        <ion-select-option value="normal">Normal</ion-select-option>
+        <ion-select-option value="premium">Premium</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Tipo de Ingresso:</ion-label>
+      <ion-select [(ngModel)]="selectedTicketType" name="ticketType">
+        <ion-select-option value="adulto">Adulto</ion-select-option>
+        <ion-select-option value="criança">Criança</ion-select-option>
+        <ion-select-option value="idoso">Idoso</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <div class="seat-selection">
+      <h2>Escolha seu Assento</h2>
+
+      <!-- Fileiras de Assentos Premium -->
+      <div *ngIf="selectedSeatType === 'premium'" class="seats">
+        <div class="row">
+          <span class="seat premium" data-seat="A1" (click)="toggleSeat('A1')">A1</span>
+          <span class="seat premium" data-seat="A2" (click)="toggleSeat('A2')">A2</span>
+          <span class="seat premium" data-seat="A3" (click)="toggleSeat('A3')">A3</span>
+          <span class="seat premium" data-seat="A4" (click)="toggleSeat('A4')">A4</span>
+          <span class="seat premium" data-seat="A5" (click)="toggleSeat('A5')">A5</span>
+        </div>
+        <div class="row">
+          <span class="seat premium" data-seat="B1" (click)="toggleSeat('B1')">B1</span>
+          <span class="seat premium" data-seat="B2" (click)="toggleSeat('B2')">B2</span>
+          <span class="seat premium" data-seat="B3" (click)="toggleSeat('B3')">B3</span>
+          <span class="seat premium" data-seat="B4" (click)="toggleSeat('B4')">B4</span>
+          <span class="seat premium" data-seat="B5" (click)="toggleSeat('B5')">B5</span>
+        </div>
+      </div>
+
+      <!-- Fileiras de Assentos Normais -->
+      <div *ngIf="selectedSeatType === 'normal'" class="seats">
+        <div class="row">
+          <span class="seat normal" data-seat="C1" (click)="toggleSeat('C1')">C1</span>
+          <span class="seat normal" data-seat="C2" (click)="toggleSeat('C2')">C2</span>
+          <span class="seat normal" data-seat="C3" (click)="toggleSeat('C3')">C3</span>
+          <span class="seat normal" data-seat="C4" (click)="toggleSeat('C4')">C4</span>
+          <span class="seat normal" data-seat="C5" (click)="toggleSeat('C5')">C5</span>
+        </div>
+        <div class="row">
+          <span class="seat normal" data-seat="D1" (click)="toggleSeat('D1')">D1</span>
+          <span class="seat normal" data-seat="D2" (click)="toggleSeat('D2')">D2</span>
+          <span class="seat normal" data-seat="D3" (click)="toggleSeat('D3')">D3</span>
+          <span class="seat normal" data-seat="D4" (click)="toggleSeat('D4')">D4</span>
+          <span class="seat normal" data-seat="D5" (click)="toggleSeat('D5')">D5</span>
+        </div>
+      </div>
+    </div>
+
+    <ion-button expand="full" type="submit">Comprar Ingresso</ion-button>
+  </form>
+</ion-content>
