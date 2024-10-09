@@ -12,4 +12,5 @@ export class CompraPage implements OnInit {
   ngOnInit() {
   }
 
+
 }

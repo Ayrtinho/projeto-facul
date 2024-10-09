@@ -1,16 +1,16 @@
 /* Estilos Gerais */
 ion-header {
-  background-color: #1c1c1e;
-  color: white;
+  background-color: #1a237e;
 }
 
 ion-toolbar {
-  --background: #1c1c1e;
+  --background: #1a237e;
 }
 
 ion-title {
   font-size: 24px;
   font-weight: bold;
+  color: white;
 }
 
 /* Conteúdo */
@@ -99,6 +99,7 @@ ion-button {
 ion-button:hover {
   background-color: #0056b3; /* Cor do botão ao passar o mouse */
 }
+
 
   
   
