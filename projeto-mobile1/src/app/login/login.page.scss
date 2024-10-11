@@ -1,6 +1,5 @@
 /* Estilos Gerais */
 ion-content {
-    --background: #f7f7f7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +9,6 @@ ion-content {
   }
   
   .login-section {
-    background-color: #ffffff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     width: 100%;
@@ -21,13 +19,13 @@ ion-content {
   .heading h1 {
     font-size: 28px;
     font-weight: bold;
-    color: #333;
+    color: #030000;
     margin-bottom: 10px;
   }
   
   .heading p {
     font-size: 16px;
-    color: #888;
+    color: #000000;
   }
   
   .login-form {
@@ -49,19 +47,19 @@ ion-content {
   
   .form-input ion-item {
     --background: transparent;
-    --border-color: #ddd;
-    --color-focused: #4a90e2;
+    --border-color: #000000;
+    --color-focused: #000000;
     --highlight-background-focused: transparent;
     padding-left: 35px;
   }
   
   .form-input ion-label {
-    color: #888;
+    color: #000000;
     font-weight: 500;
   }
   
   .form-input ion-input {
-    color: #333;
+    color: #000000;
   }
   
   /* Botões e ações */
@@ -70,37 +68,44 @@ ion-content {
   }
   
   .login-button {
-    --background: #4a90e2;
-    --background-focused: #357ABD;
+    --background: #000000;
+    --background-focused: #000000;
     --border-radius: 6px;
-    width: 100%;
   }
   
   .login-button:hover {
-    --background: #357ABD;
+    --background: #686262;
   }
   
   .cadastro-button {
-    --background: #ffffff;
-    --border-color: #4a90e2;
+    --background: #000000;
+    --border-color: #000000;
     --border-radius: 6px;
-    color: #4a90e2;
+    color: #ffffff;
     margin-top: 15px;
   }
   
   .cadastro-button:hover {
-    --background: #f0f0f0;
+    --background: #686262;
   }
   
   p {
     font-size: 14px;
-    color: #888;
+    color: #000000;
     margin: 10px 0;
   }
   
   p:hover {
-    color: #333;
+    color: #686262;
     cursor: pointer;
   }
   
 
+  .imagem{
+  background-image: url(/assets/login.png);
+  background-size: cover; /* Para a imagem cobrir todo o espaço */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  height: 100vh; /* Para garantir que a imagem cubra toda a altura da tela */
+  width: 100vw; /* Para garantir que a imagem cubra toda a largura da tela */
+  }

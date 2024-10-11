@@ -85,11 +85,10 @@ ion-label {
 
 /* Botão de Compra */
 ion-button {
-  background-color: #007bff; /* Cor sólida para o botão */
   color: white;
-  font-size: 16px;
   border-radius: 4px;
-  padding: 10px 20px; /* Ajustar o espaçamento do botão */
+  align-items: center;
+  text-align: center;
 }
 
 /* Responsividade */

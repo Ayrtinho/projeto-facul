@@ -66,22 +66,6 @@ ion-title {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
 }
 
-ion-card {
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 8px; /* Bordas arredondadas nos cartões */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve nos cartões */
-    background-color: rgba(255, 255, 255, 0.1); /* Fundo levemente transparente */
-}
-
-/* Estilo para imagens de assentos */
-img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover; /* Garante que a imagem se ajuste corretamente */
-    border-radius: 8px; /* Bordas arredondadas nas imagens */
-}
-
 /* Estilizando o layout geral */
 body {
     margin: 0;
