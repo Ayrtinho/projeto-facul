@@ -1,31 +1,44 @@
 <ion-content>
   <div class="imagem">
-  <div class="login-section ion-padding">
-    <div class="heading ion-padding">
-      <h1>Bem Vindo</h1>
-      <p> Continue</p>
-    </div>
-    <div class="login-form ion-padding">
-      <div class="form-input">
-        <ion-icon name="mail-outline"></ion-icon>
-        <ion-item>
-          <ion-label position="floating">EMAIL</ion-label>
-          <ion-input type="email"></ion-input>
-        </ion-item>
+    <div class="login-section ion-padding">
+      <div class="heading ion-padding">
+        <h1>Bem Vindo</h1>
+        <p>Continue</p>
       </div>
-      <div class="form-input">
-        <ion-icon name="lock-closed-outline"></ion-icon>
-        <ion-item>
-          <ion-label position="floating">PASSWORD</ion-label>
-          <ion-input type="password"></ion-input>
-        </ion-item>
+      <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+        <div class="login-form ion-padding">
+          <!-- Campo de E-mail -->
+          <div class="form-input">
+            <ion-icon name="mail-outline"></ion-icon>
+            <ion-item>
+              <ion-label position="floating">E-mail</ion-label>
+              <ion-input type="email" [(ngModel)]="email" name="email" required></ion-input>
+            </ion-item>
+            <ion-text color="danger" *ngIf="form.submitted && form.controls['email']?.invalid">
+              O E-mail é obrigatório!
+            </ion-text>
+          </div>
+
+          <!-- Campo de Senha -->
+          <div class="form-input">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <ion-item>
+              <ion-label position="floating">Senha</ion-label>
+              <ion-input type="password" [(ngModel)]="senha" name="senha" required></ion-input>
+            </ion-item>
+            <ion-text color="danger" *ngIf="form.submitted && form.controls['senha']?.invalid">
+              A Senha é obrigatória!
+            </ion-text>
+          </div>
+        </div>
+
+        <!-- Botões -->
+        <div class="action-button ion-padding">
+          <ion-button class="login-button" type="submit">Entrar</ion-button>
+          <p>Esqueceu sua senha?</p>
+          <ion-button class="cadastro-button" (click)="showCadastro()">Cadastre-se</ion-button>
+        </div>
+      </form>
     </div>
   </div>
-  <div class="action-button ion-padding">
-    <ion-button class="login-button">Entrar</ion-button>
-    <p>Forgot password ?</p>
-    <ion-button class="cadastro-button" (click)="showCadastro()">Cadastre-se</ion-button>
-  </div>
-  </div>
-</div>
 </ion-content>

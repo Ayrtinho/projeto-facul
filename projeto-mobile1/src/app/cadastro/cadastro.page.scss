@@ -1,4 +1,59 @@
-.imagem{
+ion-content {
+    --background: #f0f0f500; /* Fundo suave */
+  }
+  
+  
+  h1 {
+    color: #33333300;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    white-space: nowrap;
+  }
+  
+  ion-item {
+    margin-bottom: 15px;
+  }
+  
+  ion-label {
+    font-weight: bold;
+    color: #55555500;
+  }
+  
+  ion-input {
+    --padding-start: 10px;
+    --padding-end: 10px;
+    --background: #fafafa00;
+    border-radius: 5px;
+  }
+  
+  ion-button {
+    width: 100%;
+    margin-top: 20px;
+    --background: #4CAF50; /* Cor verde */
+    --border-radius: 5px;
+  }
+  
+  ion-button[disabled] {
+    --background: #c1c1c1;
+  }
+  
+  ion-text {
+    font-size: 12px;
+  }
+  
+  ion-text[color=danger] {
+    color: #ff4c4c; /* Vermelho para erros */
+  }.imagem{
     background-image: url(/assets/cadastro.png);
     background-size: cover; /* Para a imagem cobrir todo o espaço */
     background-position: center; /* Centraliza a imagem */

@@ -7,6 +7,8 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
+  email: string = '';
+  senha: string = '';
 
   constructor(private navCtrl: NavController) {}
 
@@ -16,6 +18,11 @@ export class LoginPage implements OnInit {
 
   ngOnInit() {
   }
-
+  onSubmit(form: any) {
+    if (form.valid) {
+      console.log('Formulário válido, dados:', this.email, this.senha);
+    } else {
+      console.log('Formulário inválido');
+    }
 }
-
+}
