@@ -28,4 +28,8 @@ export class HomePage {
     this.navCtrl.navigateForward('futebol')
   }
 
+  showNoticias(){
+    this.navCtrl.navigateForward('noticias')
+  }
+
 }

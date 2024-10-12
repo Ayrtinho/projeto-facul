@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar class="custom-toolbar">
+    <ion-title class="custom-title">Ion Ingressos</ion-title>
+    <ion-buttons slot="end">
+      <!-- Icone de Ticket -->
+      <ion-button class="icon-only-button" (click)="showEventos()" >
+        <ion-icon name="ticket-outline"></ion-icon>
+      </ion-button>
+      <!-- Botão de login -->
+      <ion-button class="icon-only-button" (click)="showLogin()"> 
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--sessao tipos de pagamentos-->
+<div class="card-credit-session">
+  <h1>Formas de Pagamentos</h1>
+</div>
+
+<div class="cartao-credito">
+  <h3>Crédito</h3>
+  <div class="pagamentos">
+    <img src="assets/pagbank.png">
+    <img src="assets/mastercard.png" >
+    <img src="assets/visa.png" >
+    <img src="assets/american.png" >
+    <img src="assets/itau.png">
+  </div>
+</div>
+
+<div class="cartao-debito">
+  <h3>Débito</h3>
+  <div class="pagamentos">
+    <img src="assets/nubank.png">
+    <img src="assets/bb.png">
+    <img src="assets/santander.png">
+    <img src="assets/bradesco.jpg">
+    <img src="assets/c6.png">
+  </div>
+</div>
+
+<div class="outros">
+  <h3>Outros Pagamentos</h3>
+  <div class="pagamentos">
+    <img src="assets/paypal.png">
+    <img src="assets/pix.png">
+    <img src="assets/apple.png">
+    <img src="assets/google.png">
+  </div>
+</div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar class="custom-footer-toolbar">
+    <ion-segment class="custom-segment">
+      <ion-segment-button value="home" class="custom-segment-button" (click)="showHome()">
+        <ion-icon name="home-outline" class="custom-icon"></ion-icon>
+        <ion-label class="custom-label">Home</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="filmes" class="custom-segment-button" (click)="showFilmes()">
+        <ion-icon name="film-outline" class="custom-icon"></ion-icon>
+        <ion-label class="custom-label">Filmes</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="futebol" class="custom-segment-button" (click)="showFutebol()">
+        <ion-icon name="football-outline" class="custom-icon"></ion-icon>
+        <ion-label class="custom-label">Futebol</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-footer>
