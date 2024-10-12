@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-buy-page',
@@ -38,7 +39,7 @@ export class BuyPage {
     ],
   };
 
-  constructor() {}
+  constructor(private navCtrl: NavController) {}
 
   toggleSeat(seatLabel: string) {
     const seat = this.seats.premium.find(s => s.label === seatLabel) || this.seats.normal.find(s => s.label === seatLabel);
@@ -58,6 +59,10 @@ export class BuyPage {
     } else {
       alert('Por favor, escolha ao menos um assento.');
     }
+  }
+
+  showFinalizar(){
+    this.navCtrl.navigateForward('finalizar')
   }
 }
 

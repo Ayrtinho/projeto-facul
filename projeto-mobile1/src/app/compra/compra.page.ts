@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-compra',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CompraPage implements OnInit {
 
-  constructor() {}
+  constructor(private navCtrl: NavController) {}
+
+  showFinalizar(){
+    this.navCtrl.navigateForward('finalizar')
+  }
 
   ngOnInit() {
   }

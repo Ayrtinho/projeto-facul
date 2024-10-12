@@ -1,0 +1,118 @@
+ion-header {
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    padding: 10px 0;
+  
+    ion-toolbar {
+      border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    }
+  }
+  
+  ion-title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  ion-content {
+    background: #f1f5f9;
+    padding: 20px;
+  
+    form {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      margin-top: 20px;
+      transition: transform 0.3s ease;
+  
+      &:hover {
+        transform: translateY(-5px);
+      }
+  
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #5a67d8;
+        font-weight: 600;
+      }
+    }
+  
+    ion-item {
+      --background: transparent;
+      margin-bottom: 15px;
+  
+      ion-label {
+        font-weight: 500;
+        color: #4a5568;
+        font-size: 1.1rem;
+        transition: color 0.3s ease;
+  
+        &:hover {
+          color: #5a67d8;
+        }
+      }
+      
+      ion-input {
+        border: 2px solid #cbd5e0;
+        border-radius: 8px;
+        padding: 12px;
+        transition: border-color 0.3s ease;
+  
+        &:focus {
+          border-color: #5a67d8;
+          box-shadow: 0 0 5px rgba(90, 103, 216, 0.5);
+        }
+      }
+    }
+  
+    ion-button {
+      color: rgb(2, 2, 2);
+      border-radius: 30px;
+      font-size: 1.2rem;
+      padding: 15px 0;
+      transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+      margin-top: 20px;
+  
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+  
+      &:active {
+        transform: translateY(1px);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      }
+    }
+  
+    img {
+      margin: 30px 0;
+      border: 4px solid #b83b5a;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+      width: 240px; /* Aumentando o tamanho do QR Code */
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto; /* Centraliza a imagem */
+      transition: transform 0.3s ease;
+  
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+  
+  @media (max-width: 600px) {
+    ion-title {
+      font-size: 1.7rem;
+    }
+    
+    ion-button {
+      font-size: 1rem;
+      padding: 12px 0;
+    }
+  }
+  
+  

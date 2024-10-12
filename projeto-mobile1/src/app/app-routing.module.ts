@@ -42,7 +42,10 @@ const routes: Routes = [
     path: 'finalizar',
     loadChildren: () => import('./finalizar/finalizar.module').then( m => m.FinalizarPageModule)
   },
-
+  {
+    path: 'noticias',
+    loadChildren: () => import('./noticias/noticias.module').then( m => m.NoticiasPageModule)
+  },
 ];
 
 @NgModule({
