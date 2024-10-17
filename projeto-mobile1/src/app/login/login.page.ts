@@ -18,6 +18,7 @@ export class LoginPage implements OnInit {
 
   ngOnInit() {
   }
+  
   onSubmit(form: any) {
     if (form.valid) {
       console.log('Formulário válido, dados:', this.email, this.senha);
