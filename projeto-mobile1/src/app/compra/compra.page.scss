@@ -1,15 +1,14 @@
-ion-toolbar {
-    --background: #1a237e;
-}
-
-ion-header {
-    background-color: #1a237e;
+ion-header, ion-toolbar{
+  --background: #1a237e; /* Cor de fundo personalizada */
+  --color: #ffffff; /* Cor do texto personalizada */
+  --padding-start: 10px; /* Espaçamento à esquerda */
+  --padding-end: 10px; /* Espaçamento à direita */
 }
 
 ion-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
+    font-family: 'Roboto', sans-serif; /* Fonte personalizada */
+    font-size: 22px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito no título */
 }
 
 .seat {
@@ -66,22 +65,11 @@ ion-title {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
 }
 
-/* Estilizando o layout geral */
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif; /* Fonte mais moderna */
-    background-color: #f5f5f5; /* Fundo claro para contraste */
-}
-
-/* Configurações de layout para responsividade */
-@media (max-width: 768px) {
-    .seat-map {
-        margin: 10px; /* Reduzir margens em telas menores */
-        padding: 15px; /* Reduzir padding em telas menores */
-    }
-
-    ion-title {
-        font-size: 20px; /* Reduzir o tamanho da fonte em telas menores */
-    }
+ion-button{
+  color: white;
+  border-radius: 4px;
+  align-items: center;
+  padding: 10px 80px;
+  font-size: 16px;
 }
 

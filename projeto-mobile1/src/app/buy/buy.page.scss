@@ -1,18 +1,14 @@
-/* Estilos Gerais */
-ion-header {
-  background-color: #1a237e;
-  height: 60px; /* Altura do cabeçalho */
-}
-
-ion-toolbar {
-  --background: #1a237e;
+ion-header, ion-toolbar{
+  --background: #1a237e; /* Cor de fundo personalizada */
+  --color: #ffffff; /* Cor do texto personalizada */
+  --padding-start: 10px; /* Espaçamento à esquerda */
+  --padding-end: 10px; /* Espaçamento à direita */
 }
 
 ion-title {
-  font-size: 22px; /* Tamanho do título */
-  font-weight: bold;
-  color: white;
-  text-align: center; /* Centralizar título */
+  font-family: 'Roboto', sans-serif; /* Fonte personalizada */
+  font-size: 22px; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito no título */
 }
 
 /* Conteúdo */
@@ -88,26 +84,15 @@ ion-button {
   color: white;
   border-radius: 4px;
   align-items: center;
-  text-align: center;
+  padding: 10px 80px;
+  font-size: 16px;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-  .seat {
-    width: 40px; /* Ajuste de largura para telas menores */
-    height: 40px;
-  }
-
-  ion-button {
-    font-size: 14px; /* Botão menor em telas menores */
-    padding: 8px 16px;
-  }
-
-  ion-title {
-    font-size: 20px; /* Título menor em telas menores */
-  }
+h2{
+  font-family: 'Roboto', sans-serif; /* Fonte personalizada */
+  font-size: 22px; /* Tamanho da fonte */
+  font-weight: bold; /* Negrito no título */
 }
-
 
 
 
