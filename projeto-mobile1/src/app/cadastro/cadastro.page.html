@@ -1,51 +1,43 @@
 <ion-content>
-  <h1>Cadastre-se</h1>
-
-  <form (ngSubmit)="onSubmit()">
-      <ion-item>
-          <ion-label position="floating">
-              <ion-icon slot="start" name="person"></ion-icon>
-              Nome:
-          </ion-label>
-          <ion-input type="text" [(ngModel)]="nome" name="nome" required></ion-input>
-      </ion-item>
-      <ion-item *ngIf="nome === ''">
-          <ion-text color="danger">Nome é obrigatório</ion-text>
-      </ion-item>
-
-      <ion-item>
-          <ion-label position="floating">
-              <ion-icon slot="start" name="lock-closed"></ion-icon>
-              Senha:
-          </ion-label>
-          <ion-input type="password" [(ngModel)]="senha" name="senha" required minlength="6"></ion-input>
-      </ion-item>
-      <ion-item *ngIf="senha && senha.length < 6">
-          <ion-text color="danger">Senha deve ter no mínimo 6 caracteres</ion-text>
-      </ion-item>
-
-      <ion-item>
-          <ion-label position="floating">
-              <ion-icon slot="start" name="mail"></ion-icon>
-              E-mail:
-          </ion-label>
-          <ion-input type="email" [(ngModel)]="email" name="email" required email></ion-input>
-      </ion-item>
-      <ion-item *ngIf="!email">
-          <ion-text color="danger">Digite um e-mail válido</ion-text>
-      </ion-item>
-
-      <ion-item>
-          <ion-label position="floating">
-              <ion-icon slot="start" name="card"></ion-icon>
-              CPF:
-          </ion-label>
-          <ion-input type="text" [(ngModel)]="cpf" name="cpf" required pattern="^[0-9]{11}$"></ion-input>
-      </ion-item>
-      <ion-item *ngIf="cpf && cpf.length !== 11">
-          <ion-text color="danger">Digite um CPF válido</ion-text>
-      </ion-item>
-      
-      <ion-button type="submit">Cadastrar</ion-button>
-  </form>
+    <div class="heading ion-padding">
+        <h1>Cadastre-se</h1>
+      </div>
+        <form (ngSubmit)="onSubmit()">
+            <ion-item>
+                <ion-icon slot="start" name="person"></ion-icon>
+                <ion-label position="floating"> Nome:</ion-label>
+                <ion-input type="text" [(ngModel)]="nome" name="nome" required></ion-input>
+                  </ion-item>
+                  <ion-item *ngIf="nome === ''">
+                    <ion-text color="danger">Nome é obrigatório</ion-text>
+                </ion-item>
+                <ion-item>
+                    <ion-icon slot="start" name="lock-closed"></ion-icon>
+                    <ion-label position="floating">Senha:
+                    </ion-label>
+                    <ion-input type="password" [(ngModel)]="senha" name="senha" required minlength="6"></ion-input>
+                </ion-item>
+                <ion-item *ngIf="senha && senha.length < 6">
+                    <ion-text color="danger">Senha deve ter no mínimo 6 caracteres</ion-text>
+                </ion-item>
+                <ion-item>
+                    <ion-icon slot="start" name="mail"></ion-icon>
+                    <ion-label position="floating">E-mail:
+                    </ion-label>
+                    <ion-input type="email" [(ngModel)]="email" name="email" required email></ion-input>
+                </ion-item>
+                <ion-item *ngIf="!email">
+                    <ion-text color="danger">Digite um e-mail válido</ion-text>
+                </ion-item>
+                <ion-item>
+                    <ion-icon slot="start" name="card"></ion-icon>
+                    <ion-label position="floating">CPF:
+                    </ion-label>
+                    <ion-input type="text" [(ngModel)]="cpf" name="cpf" required pattern="^[0-9]{11}$"></ion-input>
+                </ion-item>
+                <ion-item *ngIf="cpf && cpf.length !== 11">
+                    <ion-text color="danger">Digite um CPF válido</ion-text>
+                </ion-item>  
+                <ion-button type="submit">Cadastrar</ion-button>
+            </form>
 </ion-content>
