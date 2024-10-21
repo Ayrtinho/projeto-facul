@@ -11,29 +11,48 @@ ion-header, ion-toolbar{
     font-weight: bold; /* Negrito no título */
   }
   
-ion-item {
-  --background: transparent;
-  margin-bottom: 15px;
+  ion-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+
+  form {
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    max-width: 400px; /* Largura máxima do formulário */
+    margin: auto; /* Centraliza o formulário */
+  }
   
-      ion-label {
-        font-weight: 500;
-        color: #4a5568;
-        font-size: 1.1rem;
-        transition: color 0.3s ease;
-      }
-      
-      ion-input {
-        border: 2px solid #cbd5e0;
-        border-radius: 8px;
-        padding: 12px;
-        transition: border-color 0.3s ease;
-      }
-    }
+  ion-item {
+    margin-bottom: 15px; /* Espaçamento entre os itens */
+  }
   
-ion-button {
-  color: white;
-  border-radius: 4px;
-  padding: 10px 140px;
-  font-size: 16px;
-}
+  ion-label {
+    color: #333; /* Cor do texto do rótulo */
+    font-family:'Roboto', sans-serif;
+    font-size: 10px;
+  }
+  
+  ion-input {
+    border-radius: 4px; /* Bordas arredondadas nos inputs */
+  }
+  
+  ion-radio-group {
+    margin-top: 10px; /* Espaçamento acima do grupo de rádio */
+  }
+  
+  ion-button {
+    background-color: #007bff; /* Cor do botão */
+    color: #fff; /* Cor do texto do botão */
+    border-radius: 4px; /* Bordas arredondadas no botão */
+  }
+  
+  ion-button:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse */
+  }
+
   

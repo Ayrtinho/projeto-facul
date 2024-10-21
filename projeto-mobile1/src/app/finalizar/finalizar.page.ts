@@ -8,7 +8,7 @@ import * as QRCode from 'qrcode'; // Correção na importação
   styleUrls: ['./finalizar.page.scss'],
 })
 export class FinalizarPage {
-  totalAmount: number = 100.00; // valor total da compra
+  totalAmount: number = 0; // valor total da compra
   paymentMethod: string = 'credit_card';
   cardNumber!: string;
   cardName!: string;
