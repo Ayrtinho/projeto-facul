@@ -31,5 +31,10 @@ export class HomePage {
   showNoticias(){
     this.navCtrl.navigateForward('noticias')
   }
-
+  showCompra() {
+    this.navCtrl.navigateForward('compra')
+  }
+  showBuy() {
+    this.navCtrl.navigateForward('buy')
+  }
 }
