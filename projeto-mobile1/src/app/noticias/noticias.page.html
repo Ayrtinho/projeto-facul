@@ -14,7 +14,17 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content *ngIf="news.length > 0"> 
+  <ion-card *ngFor="let article of news">
+  <ion-img [src]="article.urlToImage"></ion-img>
+  <ion-card-header>
+    <ion-card-title>{{ article.title }}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <p>{{ article.description }}</p>
+    <ion-button expand="block" color="primary" href="{{ article.url }}" target="_blank">Leia Mais</ion-button>
+  </ion-card-content>
+</ion-card>
   <!--sessao tipos de pagamentos-->
 <div class="card-credit-session">
   <h1>Formas de Pagamentos</h1>
