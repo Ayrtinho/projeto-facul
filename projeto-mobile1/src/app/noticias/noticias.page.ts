@@ -40,7 +40,7 @@ export class NoticiasPage implements OnInit {
     fetch(apiUrl)
       .then(response => response.json())
       .then(data => {
-        this.news = data.articles;
+        this.news = data.articles.slice(0, 10);
       })
       .catch(error => console.error('Error fetching data:', error));
   }
