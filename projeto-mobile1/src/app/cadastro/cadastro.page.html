@@ -38,7 +38,7 @@
                 <ion-item *ngIf="cpf && cpf.length !== 11">
                     <ion-text color="danger">Digite um CPF válido</ion-text>
                 </ion-item>  
-                <ion-button type="submit" onclick="Cadastrar()">Cadastrar</ion-button>
+                <ion-button type="submit" (ngSubmit)="onSubmit()">Cadastrar</ion-button>
             </form>
 </ion-content>
 

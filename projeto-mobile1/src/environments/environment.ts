@@ -4,13 +4,13 @@
 
 export const environment = {
   production: false,
-  firebaseConfig: {
-    apiKey: "AIzaSyBSwnPRxb5YiC8ZWbetu6nrqODY3XuC6eM",
-    authDomain: "ionic-d94fa.firebaseapp.com",
-    projectId: "ionic-d94fa",
-    storageBucket: "ionic-d94fa.firebasestorage.app",
-    messagingSenderId: "955344542573",
-    appId: "1:955344542573:web:a248b10bebd73e05b29864"
+  firebase: {
+    apiKey: "AIzaSyA89rD8R-IpmiOu7GWTZ0R8X4GYAlY--8Y",
+    authDomain: "projeto-ion-ingressos-df267.firebaseapp.com",
+    projectId: "projeto-ion-ingressos-df267",
+    storageBucket: "projeto-ion-ingressos-df267.firebasestorage.app",
+    messagingSenderId: "294886762887",
+    appId: "1:294886762887:web:6ac49cf048924e32c10b22"
   }
   
 };
