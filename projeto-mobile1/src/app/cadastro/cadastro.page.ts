@@ -30,4 +30,5 @@ export class CadastroPage {
       console.log('Formulário inválido');
     }
   }
+  
 }

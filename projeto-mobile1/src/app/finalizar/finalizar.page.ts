@@ -17,16 +17,6 @@ export class FinalizarPage {
 
   constructor(private alertController: AlertController, private navCtrl: NavController) {}
 
-  onPaymentMethodChange() {
-    this.pixCode = ''; // Limpa o código PIX ao mudar o método de pagamento
-  }
-
-  async generatePix() {
-    // Aqui você geraria uma chave PIX real. Para fins de exemplo, usaremos um texto simples.
-    const pixKey = `key-${Math.random().toString(36).substring(7)}`;
-    this.pixCode = await QRCode.toDataURL(pixKey);
-  }
-
   async processPayment() {
     if (this.paymentMethod === 'credit_card') {
       // Lógica para processar pagamento com cartão de crédito

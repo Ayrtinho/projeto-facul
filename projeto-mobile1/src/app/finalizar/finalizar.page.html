@@ -16,12 +16,10 @@
     </ion-item>
     
     <ion-item>
-      <ion-radio-group [(ngModel)]="paymentMethod" (ionChange)="onPaymentMethodChange()">
         <ion-item>
           <ion-label>Cartão de Crédito</ion-label>
           <ion-radio value="credit_card"></ion-radio>
         </ion-item>
-      </ion-radio-group>
     </ion-item>
 
     <ion-item *ngIf="paymentMethod === 'credit_card'">

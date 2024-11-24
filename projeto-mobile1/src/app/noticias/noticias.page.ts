@@ -36,7 +36,7 @@ export class NoticiasPage implements OnInit {
   }
   
   getTeslaNews() {
-    const apiUrl = 'https://newsapi.org/v2/everything?q=futebol e filmes&from=2024-09-22&sortBy=publishedAt&apiKey=834c92db1be44f6ca2f114bd56199215';
+    const apiUrl = 'https://newsapi.org/v2/everything?q=futebolefilmes&from=2024-10-24&sortBy=publishedAt&apiKey=725a67681180417681f0ecd373d8176f';
     
     fetch(apiUrl)
       .then(response => response.json())
