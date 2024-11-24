@@ -21,10 +21,6 @@
           <ion-label>Cartão de Crédito</ion-label>
           <ion-radio value="credit_card"></ion-radio>
         </ion-item>
-        <ion-item>
-          <ion-label>PIX</ion-label>
-          <ion-radio value="pix"></ion-radio>
-        </ion-item>
       </ion-radio-group>
     </ion-item>
 
@@ -38,15 +34,9 @@
       <ion-input type="text" [(ngModel)]="cardName" name="cardName"></ion-input>
     </ion-item>
 
-    <div *ngIf="paymentMethod === 'pix'">
-      <ion-button (click)="generatePix()">Gerar QR Code PIX</ion-button>
-      <div *ngIf="pixCode">
-        <ion-label>QR Code PIX:</ion-label>
-        <img [src]="pixCode" alt="QR Code PIX" />
-      </div>
-    </div>
-
     <ion-button type="submit">Pagar</ion-button>
+
+    <ion-button type="submit" (click)="showCancelar()">Cancelar</ion-button>
   </form>
 </ion-content>
 

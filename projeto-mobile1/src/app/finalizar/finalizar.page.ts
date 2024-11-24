@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 import * as QRCode from 'qrcode'; // Correção na importação
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-finalizar',
@@ -14,7 +15,7 @@ export class FinalizarPage {
   cardName!: string;
   pixCode!: string;
 
-  constructor(private alertController: AlertController) {}
+  constructor(private alertController: AlertController, private navCtrl: NavController) {}
 
   onPaymentMethodChange() {
     this.pixCode = ''; // Limpa o código PIX ao mudar o método de pagamento
@@ -35,15 +36,12 @@ export class FinalizarPage {
         buttons: ['OK'],
       });
       await alert.present();
-    } else if (this.paymentMethod === 'pix') {
-      // Lógica para processar pagamento com PIX
-      const alert = await this.alertController.create({
-        header: 'Pagamento Realizado',
-        message: `Pagamento de R$${this.totalAmount} com PIX realizado com sucesso!`,
-        buttons: ['OK'],
-      });
-      await alert.present();
-    }
+    } 
+  }
+
+
+  showCancelar() {
+    this.navCtrl.navigateForward('home')
   }
 }
 

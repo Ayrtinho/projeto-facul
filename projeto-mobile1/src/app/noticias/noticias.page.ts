@@ -34,6 +34,7 @@ export class NoticiasPage implements OnInit {
   ngOnInit() {
     this.getTeslaNews();
   }
+  
   getTeslaNews() {
     const apiUrl = 'https://newsapi.org/v2/everything?q=futebol e filmes&from=2024-09-22&sortBy=publishedAt&apiKey=834c92db1be44f6ca2f114bd56199215';
     
