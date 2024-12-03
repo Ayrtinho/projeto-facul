@@ -1,0 +1,427 @@
+.custom-toolbar {
+    --background: #1a237e; /* Cor de fundo personalizada */
+    --color: #ffffff; /* Cor do texto personalizada */
+    --padding-start: 10px; /* Espaçamento à esquerda */
+    --padding-end: 10px; /* Espaçamento à direita */
+  }
+  
+  .custom-title {
+    font-family: 'Roboto', sans-serif; /* Fonte personalizada */
+    font-size: 22px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito no título */
+  }
+  
+  .icon-only-button {
+    --color: #ffffff; /* Cor do ícone */
+    --padding: 0; /* Remove o padding */
+    --border: none; /* Remove a borda */
+    --margin: 0; /* Remove a margem */
+  }
+  
+  .icon-only-button ion-icon {
+    font-size: 24px; /* Ajuste o tamanho do ícone conforme necessário */
+  }
+  
+  .custom-footer-toolbar {
+    --background: #f0f0f0; /* Cor de fundo da toolbar */
+    --color: #1a237e; /* Cor dos ícones e texto */
+    --padding-start: 0; /* Remove padding desnecessário */
+    --padding-end: 0; /* Remove padding desnecessário */
+    --height: 50px; /* Diminuir a altura do footer */
+  }
+  
+  .custom-segment {
+    --background: #f0f0f0; /* Cor de fundo do segmento */
+    --color: #1a237e; /* Cor dos ícones e texto do segmento */
+    --indicator-color: #1a237e; /* Cor do indicador ativo */
+  }
+  
+  .custom-segment-button {
+    --background: transparent; /* Fundo transparente para os botões */
+    --color: #1a237e; /* Cor do texto dos botões */
+    --padding: 0; /* Remove padding interno dos botões */
+    --border: none; /* Remove borda dos botões */
+    display: flex;
+    flex-direction: column; /* Organiza ícones e labels em coluna */
+    align-items: center; /* Alinha ícones e labels ao centro horizontalmente */
+    justify-content: center; /* Alinha ícones e labels ao centro verticalmente */
+  }
+  
+  .custom-icon {
+    font-size: 20px; /* Tamanho do ícone diminuído */
+  }
+  
+  .custom-label {
+    font-family: 'Roboto', sans-serif; /* Fonte personalizada para o texto */
+    font-size: 10px; /* Tamanho da fonte diminuído para o texto */
+    margin-top: 2px; /* Espaçamento reduzido entre ícone e texto */
+  }
+  
+  
+  /* Estilo para a imagem */
+  .image-container {
+    position: relative; /* Permite posicionar elementos filhos em relação à imagem */
+    width: 100%; /* A imagem ocupa toda a largura disponível */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove padding */
+  }
+  
+  .image-link {
+    display: block;
+    position: relative;
+    overflow: hidden; /* Garante que o texto não saia da área da imagem */
+  }
+  
+  .image-link img {
+    width: 100%; /* A imagem se ajusta à largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    max-height: 180px; /* Define uma altura máxima para a imagem */
+    display: block; /* Remove espaços abaixo da imagem */
+  }
+  
+  /* Estilo para a sobreposição de informações */
+  .image-overlay {
+    position: absolute; /* Posiciona o overlay sobre a imagem */
+    bottom: 0; /* Alinha a sobreposição na parte inferior */
+    left: 0; /* Alinha a sobreposição à esquerda */
+    right: 0;
+    color: #ffffff; /* Texto branco */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo para o badge com número e gênero */
+  .badge {
+    display: flex;
+    align-items: center; /* Alinha o número e o texto verticalmente */
+    background: none; /* Remove o fundo */
+    color: #ffffff; /* Texto branco */
+    font-size: 16px; /* Tamanho da fonte do badge aumentado */
+    font-weight: normal; /* Remove o peso extra do texto */
+    margin-bottom: 10px; /* Espaçamento inferior entre o badge e o texto */
+  }
+  
+  .number {
+    margin-right: 10px; /* Espaçamento entre o número e o texto */
+    font-size: 16px; /* Tamanho da fonte do número aumentado */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Borda transparente ao redor do número */
+    border-radius: 5px; /* Canto arredondado da borda */
+    padding: 2px 5px; /* Espaçamento interno ao redor do número */
+    background: rgba(0, 0, 0, 0); /* Fundo transparente ao redor do número */
+  }
+  
+  .genre-text {
+    font-size: 16px; /* Tamanho do texto do gênero aumentado */
+  }
+  
+  /* Estilo para o título do filme */
+  .text-content {
+    margin-top: 10px; /* Espaçamento entre o badge e o texto */
+  }
+  
+  .title {
+    font-size: 24px; /* Tamanho do texto do título aumentado */
+    font-weight: bold;
+    color: #ffffff; /* Garante que o texto permaneça branco */
+  }
+  
+  
+  /* Estilos para a seção de filmes em alta */
+  
+  .trending-filmes {
+    background-color: #f0f0f0;
+    padding: 20px;
+    position: relative; /* Necessário para posicionar as setas */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites */
+  }
+  
+  .trending-filmes h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left; /* Alinha o título à esquerda */
+  }
+  
+  .trending-filmes-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites */
+  }
+  
+  .filmes-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    transition: transform 0.3s ease; /* Transição suave para o efeito de rolagem */
+  }
+  
+  .filmes-card-container {
+    position: relative; /* Necessário para posicionar o título fora do card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .filmes-card {
+    width: 180px; /* Largura do card */
+    height: 250px; /* Altura do card ajustada */
+    overflow: hidden;
+    background: #fff;
+    border-radius: 15px; /* Bordas arredondadas no card */
+    box-shadow: none; /* Remove sombra */
+    border: none; /* Remove borda */
+  }
+  
+  .filmes-card img {
+    width: 100%;
+    height: 100%; /* Faz a imagem ocupar 100% do card */
+    object-fit: cover; /* Mantém a imagem proporcional */
+    display: block; /* Remove o espaço em branco ao redor da imagem */
+    border-radius: 15px; /* Bordas arredondadas na imagem para corresponder ao card */
+    transition: transform 0.3s ease; /* Transição suave para o hover */
+  }
+  
+  .filmes-card:hover img {
+    transform: scale(1.15); /* Efeito de zoom mais intenso na imagem ao passar o mouse */
+  }
+  
+  /* Título do Filme Fora do Card */
+  .filmes-title {
+    padding: 5px;
+    text-align: center; /* Alinha o nome ao centro */
+    font-size: 0.9em; /* Tamanho da fonte ajustado */
+    font-weight: bold;
+    color: #333;
+    background-color: transparent; /* Remove o fundo do título */
+    margin-top: 5px; /* Espaço acima do título */
+    width: 180px; /* Largura do título igual à do card */
+    box-sizing: border-box; /* Inclui padding na largura do título */
+  }
+  
+  /* Botões de seta */
+  .filmes {
+    background: none; /* Remove o fundo */
+    border: none;
+    color: #000; /* Cor preta */
+    font-size: 2em; /* Tamanho das setas */
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s ease; /* Transição suave */
+    z-index: 1; /* Garante que as setas apareçam acima do conteúdo */
+  }
+  
+  .left-filmes {
+    left: 10px; /* Ajuste a posição da seta esquerda */
+  }
+  
+  .right-filmes {
+    right: 10px; /* Ajuste a posição da seta direita */
+  }
+  
+  /* Exibe as setas quando o usuário passa o mouse sobre a área de navegação */
+  .trending-filmes-container:hover .filmes {
+    opacity: 1; /* Mostra as setas ao passar o mouse sobre a área */
+  }
+  
+  
+  
+  /* seçao futebol */
+  .trending-futebol {
+    background-color: #f0f0f0;
+    padding: 20px;
+    position: relative; /* Necessário para posicionar as setas */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites */
+  }
+  
+  .trending-futebol h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left; /* Alinha o título à esquerda */
+  }
+  
+  .trending-futebol-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites */
+  }
+  
+  .futebol-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    transition: transform 0.3s ease; /* Transição suave para o efeito de rolagem */
+  }
+  
+  .futebol-card-container {
+    position: relative; /* Necessário para posicionar o título fora do card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .futebol-card {
+    width: 180px; /* Largura do card */
+    height: 250px; /* Altura do card ajustada */
+    overflow: hidden;
+    background: #fff;
+    border-radius: 15px; /* Bordas arredondadas no card */
+    box-shadow: none; /* Remove sombra */
+    border: none; /* Remove borda */
+  }
+  
+  .futebol-card img {
+    width: 100%;
+    height: 100%; /* Faz a imagem ocupar 100% do card */
+    object-fit: cover; /* Mantém a imagem proporcional */
+    display: block; /* Remove o espaço em branco ao redor da imagem */
+    border-radius: 15px; /* Bordas arredondadas na imagem para corresponder ao card */
+    transition: transform 0.3s ease; /* Transição suave para o hover */
+  }
+  
+  .futebol-card:hover img {
+    transform: scale(1.15); /* Efeito de zoom mais intenso na imagem ao passar o mouse */
+  }
+  
+  /* Título do Filme Fora do Card */
+  .futebol-title {
+    padding: 5px;
+    text-align: center; /* Alinha o nome ao centro */
+    font-size: 0.9em; /* Tamanho da fonte ajustado */
+    font-weight: bold;
+    color: #333;
+    background-color: transparent; /* Remove o fundo do título */
+    margin-top: 5px; /* Espaço acima do título */
+    width: 180px; /* Largura do título igual à do card */
+    box-sizing: border-box; /* Inclui padding na largura do título */
+  }
+  
+  /* Botões de seta */
+  .fut {
+    background: none; /* Remove o fundo */
+    border: none;
+    color: #000; /* Cor preta */
+    font-size: 2em; /* Tamanho das setas */
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s ease; /* Transição suave */
+    z-index: 1; /* Garante que as setas apareçam acima do conteúdo */
+  }
+  
+  .left-fut {
+    left: 10px; /* Ajuste a posição da seta esquerda */
+  }
+  
+  .right-fut {
+    right: 10px; /* Ajuste a posição da seta direita */
+  }
+  
+  /* Exibe as setas quando o usuário passa o mouse sobre a área de navegação */
+  .trending-futebol-container:hover .fut {
+    opacity: 1; /* Mostra as setas ao passar o mouse sobre a área */
+  }
+  
+  
+  /* noticias  */
+  
+  .trending-noticias{
+    background-color: #f0f0f0;
+    padding: 20px;
+    position: relative; /* Necessário para posicionar as setas */
+    overflow: hidden
+  }
+  
+  .trending-noticias h3{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+  }
+  
+  
+  /* pagamentos */
+  
+  .card-credit-session {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  
+  .card-credit-session h1 {
+    font-size: 1.4rem; /* Reduzindo ainda mais o título */
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+    padding: 15px;
+  }
+  
+  /* Seções de pagamento */
+  .cartao-credito, .cartao-debito, .outros {
+    margin: 10px auto;
+    max-width: 900px;
+    padding: 0;
+  }
+  
+  .cartao-credito h3, .cartao-debito h3, .outros h3 {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 10px;
+    padding-left: 10px;
+  }
+  
+  /* Estilo dos ícones */
+  .pagamentos {
+    display: flex;
+    justify-content: center; /* Alinhamento central */
+    flex-wrap: wrap;
+    gap: 8px; /* Espaço pequeno entre os cartões */
+  }
+  
+  .pagamentos img {
+    width: 70px; /* Cartões menores para telas móveis */
+    height: 43px; /* Mantendo a proporção */
+    object-fit: contain;
+    border-radius: 5px; /* Bordas suavemente arredondadas */
+    padding: 3px;
+    transition: transform 0.2s;
+  }
+  
+  .pagamentos img:hover {
+    transform: scale(1.05); /* Pequeno efeito de zoom */
+  }
+  
+  /* Responsividade para telas pequenas */
+  @media (max-width: 768px) {
+    .pagamentos img {
+      width: 60px; /* Cartões ainda menores em telas pequenas */
+      height: 37px; /* Mantendo a proporção para pequenos dispositivos */
+    }
+  
+    .cartao-credito h3, .cartao-debito h3, .outros h3 {
+      font-size: 1.1rem; /* Títulos menores */
+    }
+  }
+  
+  .butao{
+    align-items: center;
+    padding: 10px 130px;
+  }

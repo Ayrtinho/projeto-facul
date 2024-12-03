@@ -29,7 +29,7 @@ export class LoginPage implements OnInit {
       try {
         await this.authService.login(this.email, this.senha);
         console.log('Login realizado com sucesso!');
-        this.navCtrl.navigateForward('home'); // Navega para a página home
+        this.navCtrl.navigateForward('home2'); // Navega para a página home
       } catch (error: any) {
         const errorMessage = error?.message || 'Ocorreu um erro desconhecido';
         console.error('Erro ao fazer login:', errorMessage);
