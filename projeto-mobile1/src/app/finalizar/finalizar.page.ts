@@ -30,8 +30,8 @@ export class FinalizarPage {
   }
 
 
-  showCancelar() {
-    this.navCtrl.navigateForward('home')
+  showSair() {
+    this.navCtrl.navigateForward('home2')
   }
 }
 
