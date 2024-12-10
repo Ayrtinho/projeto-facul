@@ -31,10 +31,16 @@ export class Home2Page {
   showNoticias(){
     this.navCtrl.navigateForward('noticias')
   }
+
   showCompra() {
     this.navCtrl.navigateForward('compra')
   }
+
   showBuy() {
     this.navCtrl.navigateForward('buy')
+  }
+
+  showHome() {
+    this.navCtrl.navigateForward('home')
   }
 }
